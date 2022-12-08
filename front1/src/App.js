@@ -13,8 +13,8 @@ function App() {
   return (
     <>
     <BrowserRouter>
-    <Navbar/>
-    {/* <Navbar2/> */}
+    {/* <Navbar/> */}
+    <Navbar2/>
 
       <Routes>  
                  <Route exact path='/' element={< Home />}></Route>  
