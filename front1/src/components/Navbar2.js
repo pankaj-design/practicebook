@@ -8,14 +8,13 @@ function Navbar2() {
     <>
     <div>
       <ul className='A1'>
-        <li className ="D2">HOME</li>
-        <li className ="D2">ABOUT</li>
-        <li className ="D2">OTHERS</li>        
-        <li className ="D2">PRACTICE</li>   
-        {/* <li className='D2 dropdown'>DROPDOWN</li> */}
+        <NavLink className="nav-link" >PB</NavLink>
+        <li><NavLink className="nav-link" to="/">Home</NavLink></li>
+        <li><NavLink className="nav-link" to="/about">About</NavLink></li>
+        <li><NavLink className="nav-link" to="/datastore">Datastore</NavLink></li>
         <li class="dropdown">
   <a class="btn btn1 dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-    more links
+  links
   </a>
 
   <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuLink">

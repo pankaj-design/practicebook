@@ -2,8 +2,7 @@ import React , {useState}from 'react'
 // import { post } from '../../../backend1/router/auth';
 
 const About = () => {
-const [playData, setplayData] = useState([]);
-
+const [playData, setplayData] = useState([])
 const [random , setRandom] =useState({
   // number1:Math.floor(Math.random() * 100) + 1,
   number1: Math.floor(Math.random() * 10) , number2: Math.floor(Math.random() * 10),
@@ -43,6 +42,7 @@ setplayData(data);
     <>
     <div>About</div>
     <div>My email -- Pankaj0001@gmail.com</div>
+    <div><h1>Random </h1></div>
     {/* <img className='I1' src="https://images.unsplash.com/photo-1661961110144-12ac85918e40?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="dell"></img> */}
     
     <form method='POST'>
@@ -57,9 +57,11 @@ setplayData(data);
        onClick={sendData}
        >get random</button>
     </form>
+    
     <div>
-    <div key={"_id"}>{playData.map(getNumbe1 => <div><h3 className='N1'>{getNumbe1.word}</h3> - <div>{getNumbe1.meaning}</div></div>)}</div>
-    <div key={"number"}>{playData.map(getNumber2 => <div>{getNumber2.meaning}</div>)}</div>
+    {/* <div key={"_id"}>{playData.map(getNumbe1 => <div><h3 className='N1'>{getNumbe1.word}</h3> - <div>{getNumbe1.meaning}</div></div>)}</div> */}
+    <div key={"number"}>{playData.map((getNumber) => <div>{getNumber.meaning} - {getNumber.word}</div>)}</div>
+    {/* <div key={"_id"}>{playData.map( getNumber=>{first.id})}</div> */}
     </div>
     </>
   )
