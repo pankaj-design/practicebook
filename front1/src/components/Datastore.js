@@ -36,6 +36,7 @@ const Datastore = () => {
   }
   return (
     <>
+    <h1>Data Store</h1>
     <form method='POST'>
     <div className="mb-3 ">
     <label htmlFor="InputNumber" className="form-label">Number</label>

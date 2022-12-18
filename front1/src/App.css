@@ -1,16 +1,17 @@
-
-body{
+body {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-button{
- background-color: crimson;
- color:rgb(166, 232, 10)
+
+button {
+  background-color: crimson;
+  color: rgb(166, 232, 10)
 }
-.A1{
+
+.A1 {
   position: fixed;
   width: 100%;
   list-style: none;
-  display:flex;
+  display: flex;
   background-color: rgb(7, 7, 7);
   color: antiquewhite;
   opacity: 100%;
@@ -19,29 +20,33 @@ button{
   display: flex;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-.A1 li{
+
+.A1 li {
   margin-left: auto;
   /* background-color: rgb(31, 30, 28); */
   /* padding: 1px 1px 0px 1px; */
   border-radius: 3px;
 }
-.btn1{
-  color:rgb(220, 245, 231);
+
+.btn1 {
+  color: rgb(220, 245, 231);
   outline: none;
 }
-.btn ul li a{
+
+.btn ul li a {
   color: red;
 }
+
 /* .D2{
  /* padding: 1%; */
- /* margin: auto;
-}; */ */
-.dropdown {
+/* margin: auto;
+}; */
+*/ .dropdown {
   position: relative;
   display: inline-block;
 }
 
-.P1{
+.P1 {
   height: 120%;
   width: 100%;
   background-image: url(./images/mountain1.jpg);
@@ -49,27 +54,30 @@ button{
   background-repeat: no-repeat;
   background-size: cover;
   border: 2px;
-  border-style:groove;
+  border-style: groove;
   /* border-color: rgb(5, 103, 24); */
   display: grid;
   gap: 20px;
-  grid-template-rows: 6fr   ;
-  grid-template-columns: 2fr 2f ;
+  grid-template-rows: 6fr;
+  grid-template-columns: 2fr 2f;
   /* background-color: #38A087; */
- padding-top: 6%;
- 
-  
+  padding-top: 6%;
+
+
 }
-.cout1{
+
+.cout1 {
   color: rgb(192, 27, 27);
   padding: 15px 10px;
 }
-.cout{
+
+.cout {
   /* color: white; */
   color: rgb(175, 227, 175);
   padding: 15px 10px;
 }
-.I1{
+
+.I1 {
   height: 600px;
   width: 500px;
   float: right;
@@ -77,7 +85,7 @@ button{
 }
 
 
-.M1{
+.M1 {
   padding: 1% 5% 10% 2%;
   /* padding-top: 5%; */
   height: 80%;
@@ -86,20 +94,33 @@ button{
   border-width: 3px;
   border-radius: 20px;
 }
-.P1 h1{
+
+.P1 h1 {
   padding-left: 30%;
   margin-top: 7%;
   color: antiquewhite;
 }
-.P3{
+
+.P3 {
   background-color: rgb(21, 22, 22);
   color: antiquewhite;
   border: 2px;
-  border-style:groove;
+  border-style: groove;
 }
-.B2 ul{
+
+.B2 ul {
   list-style: none;
 }
-.B3 ul{
+
+.B3 ul {
   list-style: none;
+}
+.R1{
+  display:flex;
+  align-items: center;
+  text-align: center;
+  background-color: bisque;
+  margin-top: 2%;
+  width: 100%;
+  height: 200px;
 }
