@@ -4,10 +4,10 @@ import Navbar from './components/Navbar';
 import Navbar2 from './components/Navbar2';  
 import About from './components/About'; 
 import Datastore from './components/Datastore'; 
+import Footer from './components/Footer'; 
 
 import './App.css';
 import  { Routes, Route, BrowserRouter } from 'react-router-dom';  
-
 
 function App() {
   return (
@@ -22,6 +22,7 @@ function App() {
                  <Route exact path='/navbar' element={< Navbar />}></Route>  
                  <Route exact path='/datastore' element={< Datastore />}></Route>
           </Routes>  
+    <Footer/>      
     </BrowserRouter>
     </>
   );

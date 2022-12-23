@@ -1,4 +1,5 @@
 import { React, useState } from 'react'
+import About from '../components/About'
 
 function Home() {
   const [userData, setuserData] = useState({
@@ -50,7 +51,7 @@ function Home() {
   return (
     <>
       <div className='P1'>
-        <h1>One word substitution</h1>
+        <h1><div>“One word Substitution”</div></h1>
         {/* <h1>For Practice</h1> */}
         <div className='row B1'>
           <div className='col-sm-6 M1'>
@@ -66,33 +67,15 @@ function Home() {
               <div className='cout1'> Example - {userData.example}</div>
             </div>
           </div>
-          <div className='P3 row'>
-            <div className='B2 col-sm -4'>
-              <ul>
-                <li><h3>More to Learn</h3></li>
-                <li>CGL</li>
-                <li>Synonyms</li>
-                <li>Reasoning</li>
-                <li>GS</li>
-              </ul>
-            </div>
-            <div className='B3 col-sm -4'>
-              <ul >
-                <li><h3>Pankaj Yadav</h3></li>
-                <li>Website</li>
-                <li>www.pankaj@gmail.com</li>
-                <li>Noida</li>
-
-              </ul>
-            </div>
-          </div>
         </div>
       </div>
+
+      <About/>
     </>
   )
 }
 
-export default Home
+export default Home;
 
 /* <div className='col-sm -4'>
 <ul className='B2'>

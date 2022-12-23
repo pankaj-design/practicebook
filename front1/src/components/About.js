@@ -1,5 +1,6 @@
 import React, {useEffect, useState } from 'react'
 // import { post } from '../../../backend1/router/auth';
+import Home from '../components/Home'
 
 const About = () => {
   const [playData, setplayData] = useState([]);
@@ -50,9 +51,8 @@ const About = () => {
 
   return (
     <>
-      <div>About</div>
-      {/* <img className='I1' src="https://images.unsplash.com/photo-1661961110144-12ac85918e40?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="dell"></img> */}
 
+    <div className='F1'>      
       <form method='POST'>
         <input type="number1" name="number1" id='number1' defaultValue={random.number1} placeholder="random1" aria-label="number1"
         />
@@ -60,13 +60,13 @@ const About = () => {
         />
         <button id='Button' type='submit'
           onClick={sendData}
-        >get random</button>
+        >get</button>
       </form>
-
       <div className='R1'>
-        {/* <div key={"_id"}>{playData.map(getNumbe1 => <div><h3 className='N1'>{getNumbe1.word}</h3> - <div>{getNumbe1.meaning}</div></div>)}</div> */}
-        <div key={"number"}>{playData.map((getNumber) => <div>{getNumber.meaning} - {getNumber.word}</div>)}</div>
-        {/* <div key={"_id"}>{playData.map( getNumber=>{first.id})}</div> */}
+        <h1>Practice Book</h1>
+        <div key={"number"}>{playData.map((getNumber) => <div className='R2'><h2>{getNumber.word}</h2> - {getNumber.meaning}</div>)}</div>
+        <div key={"number"}>{playData.map((getNumber) => <div><p> Eg -{getNumber.example}</p></div>)}</div>
+      </div>
       </div>
     </>
   )
