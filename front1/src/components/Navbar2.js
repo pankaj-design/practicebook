@@ -8,19 +8,19 @@ function Navbar2() {
     <>
       <div>
         <ul className='A1'>
-          <NavLink className="nav-link" >PB</NavLink>
+          {/* <NavLink className="logo nav-link" >PB</NavLink> */}
           <li><NavLink className="nav-link" to="/">Home</NavLink></li>
-          <li><NavLink className="nav-link" to="/about">About</NavLink></li>
-          <li><NavLink className="nav-link" to="/datastore">Datastore</NavLink></li>
+          <li><NavLink className="nav-link" to="/learning">learning</NavLink></li>
+          <li><NavLink className="nav-link" to="/Documents">Documents</NavLink></li>
           <li className="dropdown">
-            <a className="btn btn1 dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+            <a className="btn btn1 dropdown-toggle" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
               links
             </a>
 
             <ul className="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuLink">
-              <li><a className="dropdown-item" href="#">Action</a></li>
-              <li><a className="dropdown-item" href="#">Another action</a></li>
-              <li><a className="dropdown-item" href="#">Something else here</a></li>
+              {/* <li><NavLink className="dropdown-item nav-link" to="/datastore">Database</NavLink></li> */}
+              <li><NavLink className="dropdown-item nav-link" to="/a">About</NavLink></li>
+              <li><a className="dropdown-item" href="#">Help</a></li>
             </ul>
           </li>
         </ul>

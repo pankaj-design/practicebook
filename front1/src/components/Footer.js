@@ -7,7 +7,7 @@ const Footer = () => {
             <div className='B2 col-sm -4'>
               <ul>
                 <li><h3>More to Learn</h3></li>
-                <li>CGL</li>
+                <li>One word substitution</li>
                 <li>Synonyms</li>
                 <li>Reasoning</li>
                 <li>GS</li>

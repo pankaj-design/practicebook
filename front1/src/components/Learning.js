@@ -1,29 +1,24 @@
 import React, {useEffect, useState } from 'react'
 // import { post } from '../../../backend1/router/auth';
-import Home from '../components/Home'
+// import Home from './Home'
 
-const About = () => {
+const Learning = () => {
   const [playData, setplayData] = useState([]);
   const [random, setRandom] = useState({
     // number1:Math.floor(Math.random() * 100) + 1,
-    number1: Math.floor(Math.random() * 10), number2: Math.floor(Math.random() * 10),
+    number1: Math.floor(Math.random() * 100), number2: Math.floor(Math.random() * 100),
   });
   
 
   useEffect(() => {
-    //   counter.current += 1;
-      const timer = setInterval(() => setRandom({  number1: Math.floor(Math.random() * 10), number2: Math.floor(Math.random() * 10), }), 10000);
-
-      return () => clearTimeout(timer);
-  }, []);
- 
-  useEffect(() => {
-    // Button2()
-    setInterval(function () {document.getElementById("Button").click();}, 5000);
-    }, []);
-
-
-
+    
+    const timer = setInterval(() => setRandom({  number1: Math.floor(Math.random() * 100), number2: Math.floor(Math.random() * 100), }), 8000);
+    let setInt = setInterval(function () {document.getElementById("Button").click();}, 4000);
+    return () => clearInterval(setInt);
+    // return () => clearTimeout(timer);
+}, []
+  );
+  
   const sendData = async (e) => {
     e.preventDefault();
 
@@ -61,15 +56,20 @@ const About = () => {
         <button id='Button' type='submit'
           onClick={sendData}
         >get</button>
+
       </form>
-      <div className='R1'>
+      <div key={"_id"} className='R1'>
         <h1>Practice Book</h1>
-        <div key={"number"}>{playData.map((getNumber) => <div className='R2'><h2>{getNumber.word}</h2> - {getNumber.meaning}</div>)}</div>
-        <div key={"number"}>{playData.map((getNumber) => <div><p> Eg -{getNumber.example}</p></div>)}</div>
+        {/* <div key={"number"}>{playData.slice(0,1).map((getNumber) => <div className='R2'><h2>{getNumber.word}</h2> - {getNumber.meaning}</div>)}</div> */}
+        <div key={"word"}>{playData.map((getNumber) => <div className='R2'><h2>{getNumber.word}</h2> - {getNumber.meaning}</div>)}</div>
+       
+         <div key={"_id"}>{playData.map((Number) => <div><p> Eg -{Number.example}</p></div>)}</div>
       </div>
       </div>
     </>
   )
 }
 
-export default About
+export default Learning
+
+//<div key={"number"}>{playData.slice(0,1).map((getNumber) => <div className='R2'><h2>{getNumber.word}</h2> - {getNumber.meaning}</div>)}</div>

@@ -38,7 +38,7 @@ const Datastore = () => {
     <>
     <h1>Data Store</h1>
     <form method='POST'>
-    <div className="mb-3 ">
+    <div className="mb-3  ">
     <label htmlFor="InputNumber" className="form-label">Number</label>
     <input type="number" className="form-control" name='number' value={saveData.number} onChange={handleInputs} id="Inputnumber" aria-describedby="Number"/>
   </div>

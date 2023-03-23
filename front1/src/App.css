@@ -1,6 +1,7 @@
 body {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   background-color: black;
+  color: beige;
 }
 
 button {
@@ -19,7 +20,7 @@ button {
   padding: 1%;
   margin-left: auto;
   display: flex;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .A1 li {
@@ -27,6 +28,9 @@ button {
   /* background-color: rgb(31, 30, 28); */
   /* padding: 1px 1px 0px 1px; */
   border-radius: 3px;
+}
+.A1 li :hover{
+  color:rgb(12, 211, 72)
 }
 
 .btn1 {
@@ -119,8 +123,8 @@ button {
 .R1{
   display:flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
+  /* align-items: center;
+  text-align: center; */
   font-size:x-large;
   font-style: italic;
   background-size:contain;
@@ -142,4 +146,47 @@ height: 600px;
 .R1 p{
   color: rgb(196, 203, 11);
 }
+#try{
+  color: antiquewhite;
+}
+span{
+  font-size:medium;
+  color:rgb(241, 178, 134);
+  padding-right: 2%;
+   ;
+}
+/* .L1{
+  color: rgb(158, 98, 20);
+} */
+.L2{
+  display: flex;
+  flex-direction: column;
+  /* color: rgb(158, 98, 20) */
+  color: aliceblue;
+  
+}
 
+.container{
+  display:grid;
+  grid-template-columns: 4fr 6fr ;
+  grid-template-rows: 2fr 2fr ;
+  width: 100%;
+  align-items: center;
+  /* background-color: aquamarine; */
+  
+}
+.EX2{
+  width: 80%;
+  height: 100px;
+  background-color: aliceblue;  
+  margin: 20px;
+  border: 3px;
+  border-color: gold;
+  border-style: double;
+}
+.logo{
+  font-family: 'Courier New', Courier, monospace;
+  font-style: oblique;
+  font-size: larger;
+  padding-right: 5%;
+}

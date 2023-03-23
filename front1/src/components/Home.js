@@ -1,5 +1,5 @@
 import { React, useState } from 'react'
-import About from '../components/About'
+import Learning from './Learning'
 
 function Home() {
   const [userData, setuserData] = useState({
@@ -56,7 +56,7 @@ function Home() {
         <div className='row B1'>
           <div className='col-sm-6 M1'>
             <form className="P2 d-flex" method='POST' role="search">
-              <input className="form-control me-2" type="search" name='word' id='search' placeholder="Search" aria-label="Search"
+              <input className="form-control me-2" type="search" name='word' id='search' placeholder="Use PascalCase" aria-label="Search"
                 value={search.word}
                 onChange={handleInputs} />
               <button className="btn btn-outline-success bg-warning" type="submit" onClick={myData}>Search</button>
@@ -70,7 +70,7 @@ function Home() {
         </div>
       </div>
 
-      <About/>
+      <Learning/>
     </>
   )
 }
