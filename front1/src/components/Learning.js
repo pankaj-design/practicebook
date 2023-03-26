@@ -58,10 +58,10 @@ const Learning = () => {
         >get</button>
 
       </form>
-      <div key={"_id"} className='R1'>
+      <div  className='R1'>
         <h1>Practice Book</h1>
         {/* <div key={"number"}>{playData.slice(0,1).map((getNumber) => <div className='R2'><h2>{getNumber.word}</h2> - {getNumber.meaning}</div>)}</div> */}
-        <div key={"word"}>{playData.map((getNumber) => <div className='R2'><h2>{getNumber.word}</h2> - {getNumber.meaning}</div>)}</div>
+        <div key={"word"}>{playData.map((getNumber) => <div  className='R2'><h2>{getNumber.word}</h2> - {getNumber.meaning}</div>)}</div>
        
          <div key={"_id"}>{playData.map((Number) => <div><p> Eg -{Number.example}</p></div>)}</div>
       </div>
